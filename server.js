@@ -64,7 +64,7 @@ const catSchema = new Schema({
 
     })
 
-    app.listen(3000)
+    app.listen(8080)
 }, err => {
     console.log('Connection to db failed: ' + err)
 });
