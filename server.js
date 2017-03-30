@@ -52,17 +52,17 @@ const catSchema = new Schema({
     });
     cat1.save().then( savedCat => console.log(savedCat)).catch(err => console.log(err));
 
-    // cats.find({}, (err, cat)=> {
-    //     if (err) throw err;
-    //
-    //     console.log('the cats found '+ cat)
-    //     app.get('/form',(req,res)=>{
-    //         //res.send("connected!")
-    //         res.render('test', { ID: cat })
-    //
-    //     })
-    //
-    // })
+     cats.find({}, (err, cat)=> {
+         if (err) throw err;
+
+         console.log('the cats found '+ cat)
+         app.get('/form',(req,res)=>{
+             //res.send("connected!")
+             res.render('test', { ID: cat })
+
+         })
+
+     })
     const port = process.env.PORT || 3000;
 
     app.listen(port)
