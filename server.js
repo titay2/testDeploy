@@ -41,9 +41,9 @@ const catSchema = new Schema({
 
     });
 
-    const cats = mongoose.model('cat1', catSchema)
+    const cats = mongoose.model('cat1', catSchema);
 
-    const cat1 = cats({
+    const cat1 = new cats({
         name: 'John',
         age: 10,
         gender: 'male',
@@ -56,15 +56,15 @@ const catSchema = new Schema({
     })
 
     cats.find({}, (err, cat)=> {
-        if (err) throw err;
-
-        console.log('the cats found '+ cat)
-        app.get('/form',(req,res)=>{
-            //res.send("connected!")
-            res.render('test', { ID: cat })
-
-        })
-
+        // if (err) throw err;
+        //
+        // console.log('the cats found '+ cat)
+        // app.get('/form',(req,res)=>{
+        //     //res.send("connected!")
+        //     res.render('test', { ID: cat })
+        //
+        // })
+        console.log(cat);
     })
     const port = process.env.PORT || 3000;
 
