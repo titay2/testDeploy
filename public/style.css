@@ -8,7 +8,7 @@ body{
 }
 #topContainer {
 
-    background-image:url('dark.jpg');
+    background-image:url("dark.jpg");
     height:650px;
     width:100%;
     background-size:cover;
