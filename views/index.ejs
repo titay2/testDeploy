@@ -1,109 +1,141 @@
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cats</title>
-    <link href="assets/style.css" type="text/css" rel="stylesheet"/>
+    <!--
+        <link href="assets/style.css" type="text/css" rel="stylesheet"/>
+    -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-</head>
+
+
 <body >
 
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-<div id="images-container">
+    <!--<a class="navbar-brand" href="#">
+        <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+    </a>-->
+    <a class="navbar-brand" href="#">Brana</a>
 
-    <a href = "#" id="view" class = "btn btn-primary"  role = "button"  >
-        view
-    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Books <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Recent<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Gener <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Author <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Free</a>
+            </li>
 
-    <a href = "#" id="add" class = "btn btn-primary"  role = "button"  >
-        add
-    </a>
-    <div id="image_list" class="row">
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-success my-2 my-lg-0" type="submit">Upload</button>
+        </form>
+    </div>
+</nav>
+
+
+
+
+
+<div class="container contentContainer" id="topContainer">
+
+    <div class="row">
+
+        <div class="col-md-6 col-md-offset-3" id="topRow">
+
+            <h1 class="marginTop">Brana ብራና</h1>
+
+            <p class="qoute">No two persons ever read the same book.</p>
+
+            <p class="lead">"A book lying idle on a shelf is wasted ammunition.
+                Lbooks must be kept in constant circulation.
+                A book is not only a friend, it makes friends for you.
+                When you have possessed a book with mind and spirit,
+                you are enriched.
+                But when you pass it on you are enriched threefold."</p>
+
+            <p class="bold marginTop">Henry Miller</p>
+
+
+
+        </div>
 
     </div>
-
-    <a href = "#" id="wife" class = "btn btn-primary"  role = "button"  >
-        Wife
-    </a>
-
-    <a href = "#" id="gfriend" class = "btn btn-primary"  role = "button"  >
-        G.friend
-    </a>
-
-    <div id="image_catagory" class="row">
-
-    </div>
-    <div class="modal fade" id="myModal"tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="imageTitle"></h4>
-                </div>
-                <div class="modal-body">
-                    <img id ="imageId" >
-                    <div id="map" onload="initMap()"></div>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
 
 </div>
 
-<section id="create-container" class="row">
 
-    <div class="container">
+<div class="container contentContainer" id="details">
 
-        <form id="add-form" class="form-group" method="post" action="/form">
-            <h3 class="text-center" >New spyArray</h3>
-            <div class="control-group">
-                <label >Category</label>
-                <input id="newCategory" placeholder="Enter category" >
-            </div>
-            <div class="control-group">
-                <label >Title</label>
-                <input id="newTitle" placeholder="Enter Title">
-            </div>
-            <div class="control-group">
-                <label>Description</label>
-                <textarea class="form-control" id="newDescription" rows="2"></textarea>
-            </div>
-            <div class="control-group">
-                <label >Upload image</label>
-                <input type="file" class="form-control-file" id="newImage" aria-describedby="fileHelp">
-            </div>
+    <div class="row" class="center">
 
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <button class="btn btn-primary" id="cancelForm">Cancel</button>
-        </form>
+        <h1 class="center title">Why This App Is Awesome</h1>
+        <p class="lead center">Summary of the app's awesomeness</p>
+
 
     </div>
 
-</section>
+    <div class="row marginBottom">
+
+        <div class="col-md-4 marginTop">
+            <h2><span class="glyphicon glyphicon-music"></span> Books</h2>
+            <p>Users will see all the books that has been uploaded with out logging in.
+                but they can upload or get detail information with out logging in</p>
+            <button class="btn btn-success marginTop">Login!</button>
+
+        </div>
+
+        <div class="col-md-4 marginTop">
+            <h2><span class="glyphicon glyphicon-off"></span> Filter</h2>
+            <p>once users logged in they will have access to other users detail.they can also see contact them through
+                any means available by them.They can also upload and share their books.
+                Books can be filtered with all ways possible</p>
+            <button class="btn btn-success marginTop"> Filter!</button>
+
+        </div>
+
+        <div class="col-md-4 marginTop">
+            <h2><span class="glyphicon glyphicon-pencil"></span> free</h2>
+            <p>Users can give away books for free.Or exchange it for a new one.
+                They can also claim their books back.
+                For every user who has returned books in bad condition there will
+                be signes given to them by the loner of the book.
+            </p>
+            <button class="btn btn-success marginTop">Bad user!</button>
+
+        </div>
+
+    </div>
+</div>
 
 
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJXl6z8XXZrvpQV8DcIrcN_YSak2DTtzQ">
+<script>
+
+    $(".contentContainer").css("min-height",$(window).height());
+
 </script>
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<!--
-<script src="../main.js"></script>
--->
 </body>
 </html>
-
-
-
-
-
-
