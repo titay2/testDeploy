@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const moment = require('moment')
 const Schema = mongoose.Schema
-const dotEnv = require('dotenv').config()
+ require('dotenv').config()
 
 
 const app = express()
@@ -32,8 +32,6 @@ app.get('/',(req,res)=>{
 mongoose.connect(db)
 mongoose.connect(`mongodb://${process.env.DB_HOST}:${process.env.DB_PASS}:${process.env.DB_HOST}:${process.env.DB_PORT}/cats`).then(() => {
     console.log('Connected successfully.')
-    //app.listen(process.env.APP_PORT)
-
 const catSchema = new Schema({
     name:  String,
     age:   Number,
@@ -68,10 +66,11 @@ const catSchema = new Schema({
         })
 
     })
+    const port = process.env.PORT || 3000;
 
-    app.listen(8080)
+    app.listen(port)
 }, err => {
-    console.log('Connection to db failed: ' + err)
+    console.log('Connection to db faileed: ' + err)
 });
 
 
