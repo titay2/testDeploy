@@ -1,0 +1,9 @@
+
+.gitignore
+.idea/inspectionProfiles/
+node_modules/dotenv/
+.env
+
+DB_HOST=localhost
+DB_USER=admin
+DB_PASS=HZBaan88469
