@@ -58,7 +58,7 @@ const catSchema = new Schema({
          console.log('the cats found '+ cat)
          app.get('/form',(req,res)=>{
              //res.send("connected!")
-             res.render('test', { ID: cat })
+             res.render('test', { ID: cat.json() })
 
          })
 
