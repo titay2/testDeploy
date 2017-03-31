@@ -28,9 +28,13 @@ app.get('/',(req,res)=>{
 })
 
 
-//mongoose.connect('mongodb://localhost:27017/test').then(() => {
+/*
+mongoose.connect('mongodb://localhost:27017/test').then(() => {
+*/
 //mongoose.connect(db)
+
 mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}:${process.env.DB_PORT}/cats`).then(() => {
+
     console.log('Connected successfully.')
 const catSchema = new Schema({
     name:  String,
@@ -58,7 +62,7 @@ const catSchema = new Schema({
          console.log('the cats found '+ cat)
          app.get('/form',(req,res)=>{
              //res.send("connected!")
-             res.render('test', { ID: cat.json() })
+             res.render('test', { ID: cat})
 
          })
 
