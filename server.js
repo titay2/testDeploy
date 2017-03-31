@@ -43,14 +43,14 @@ const catSchema = new Schema({
 
     const cats = mongoose.model('cat1', catSchema);
 
-    const cat1 = new cats({
+    /*const cat1 = new cats({
         name: 'John',
         age: 10,
         gender: 'male',
         color: 'blue',
         weight: 15
     });
-    cat1.save().then( savedCat => console.log(savedCat)).catch(err => console.log(err));
+    cat1.save().then( savedCat => console.log(savedCat)).catch(err => console.log(err));*/
 
      cats.find({}, (err, cat)=> {
          if (err) throw err;
