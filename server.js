@@ -2,14 +2,13 @@
  * Created by tehetenamasresha on 28/03/2017.
  */
 const express = require('express')
-const bodyParser = require('body-parser')
+const app = express()
 const mongoose = require('mongoose')
 const moment = require('moment')
-const Schema = mongoose.Schema
+
  require('dotenv').config()
 
 
-const app = express()
 
 mongoose.Promise = global.Promise; //ES6 Promise
 /*const name= req.body.uname
@@ -48,13 +47,20 @@ const catSchema = new Schema({
     const cats = mongoose.model('cat1', catSchema);
 
     /*const cat1 = new cats({
-        name: 'John',
-        age: 10,
+        name: 'Angela',
+        age: 20,
         gender: 'male',
         color: 'blue',
-        weight: 15
-    });
-    cat1.save().then( savedCat => console.log(savedCat)).catch(err => console.log(err));*/
+        weight: 40
+    });*/
+    cat1.save().then( savedCat => console.log(savedCat)).catch(err => console.log(err));
+
+    cats.find().
+    where('age').gt(17).lt(50).
+    exec(callback);
+
+
+
 
      cats.find({}, (err, cat)=> {
          if (err) throw err;
