@@ -12,14 +12,56 @@ module.exports = (app)=> {
     app.use(bodyParser.json())
     app.use(bodyParser.urlencoded({extended: true}));
 
-    /**
+    app.get('/api/setup', (req, res) => {
+
+        const starterBook = [
+            {
+                title: 'pillars',
+                author: 'ken follet',
+                description: 'good one',
+                isFree: true
+            },
+            {
+                title: 'of',
+                author: 'ken follet',
+                description: 'good one',
+                isFree: true
+            },
+            {
+                title: 'the earth',
+                author: 'ken follet',
+                description: 'good one',
+                isFree: true
+            }
+
+        ]
+
+        Books.create(starterBook, (err, result)=>
+                res.send(result)
+        )
+    })
+}
+
+    /*app.use(express.static('public'));
+
+    /!**
      * @api {get} /api/books'
-     */
+     * @apiName GetBooks
+     * @apiGroup Books
+     *!/
+
     app.get('/api/books', (req, res) => {
         Books.find().exec().then((books) => {
             res.send(books)
         })
     })
+    /!**
+     * @api {get} /api/users'
+     * @apiName Getusers4rr§
+     * @apiGroup Books
+     *!/
+
+
     app.get('/api/users', (req, res) => {
         Users.find().exec().then((users) => {
             res.send(users)
@@ -69,4 +111,4 @@ module.exports = (app)=> {
 
         })
     })
-}
+}*/

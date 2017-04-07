@@ -9,7 +9,7 @@ const Schema = mongoose.Schema;
 const bookSchema = new Schema({
     title: String,
     author: String,
-    description: Boolean,
+    description: String,
     isFree: Boolean,
 });
 
