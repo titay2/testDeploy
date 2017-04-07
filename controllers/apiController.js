@@ -12,6 +12,9 @@ module.exports = (app)=> {
     app.use(bodyParser.json())
     app.use(bodyParser.urlencoded({extended: true}));
 
+    /**
+     * @api {get} /api/books'
+     */
     app.get('/api/books', (req, res) => {
         Books.find().exec().then((books) => {
             res.send(books)
@@ -52,13 +55,14 @@ module.exports = (app)=> {
 
         })
     })
+
     app.post('/api/users', (req, res) => {
         const user = new Users()
         user.name = req.body.name;
         user.contact = req.body.contact;
 
 
-        book.save((err) => {
+        user.save((err) => {
             if (err)
                 res.send(err)
             res.json({message: 'Book added to the store!', data: book});
