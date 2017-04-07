@@ -65,7 +65,7 @@ module.exports = (app)=> {
     });
 
 
-    /*app.post('/api/books', (req, res) => {
+    app.post('/api/books', (req, res) => {
         const book = new Books()
         book.title = req.body.name;
         book.author = req.body.author;
@@ -78,14 +78,15 @@ module.exports = (app)=> {
             res.json({message: 'Book added to the store!', data: book});
 
         })
-    })*/ app.post('/api/books', upload.array(), (req, res) => {
+    })
+    /*app.post('/api/books', upload.array(), (req, res) => {
             Books.create(req.body).then( post =>{
                 res.send({status:'OK', post : post})
             }).catch(()=>{
                 res.send({status: 'error', message: 'Database error'})
             })
     })
-
+*/
     app.post('/api/users', (req, res) => {
         const user = new Users()
         user.name = req.body.name;
