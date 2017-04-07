@@ -55,15 +55,6 @@ module.exports = (app)=> {
         })
     })
 
-    app.post('/cats', upload.array(), (req, res) => {
-        console.log(req.body);
-        Cat.create(req.body).then(post => {
-            res.send({status: 'OK', post: post});
-        }).catch(() => {
-            res.send({status: 'error', message: 'Database error'});
-        });
-    });
-
 
     app.post('/api/books', (req, res) => {
         const book = new Books()

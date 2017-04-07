@@ -59,11 +59,13 @@ mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${proc
 
          })
 
-     })*/
+     })
+
+     */
     const port = process.env.PORT || 3030;
 
     app.listen(port)
-     apiController(app)
+    apiController(app)
     htmlController(app)
 
 
