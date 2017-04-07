@@ -53,7 +53,7 @@ const catSchema = new Schema({
         color: 'blue',
         weight: 40
     });*/
- /*   cat1.save().then( savedCat => console.log(savedCat)).catch(err => console.log(err));
+    cat1.save().then( savedCat => console.log(savedCat)).catch(err => console.log(err));
 
     cats.find().
     where('age').gt(17).lt(50).
@@ -71,7 +71,7 @@ const catSchema = new Schema({
              res.render('test', { ID: cat})
 
          })
-*/
+
      })
     const port = process.env.PORT || 3000;
 
