@@ -11,7 +11,6 @@ const bookSchema = new Schema({
     author: String,
     description: Boolean,
     isFree: Boolean,
-    Owner: Users
 });
 
 

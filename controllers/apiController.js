@@ -1,6 +1,7 @@
 /**
  * Created by tehetenamasresha on 30/03/2017.
  */
+const express = require('express')
 const Books = require ('../Models/books')
 const Users = require ('../Models/users')
 const bodyParser = require('body-parser')
@@ -53,10 +54,9 @@ module.exports = (app)=> {
     })
     app.post('/api/users', (req, res) => {
         const user = new Users()
-        book.title = req.body.name;
-        book.author = req.body.author;
-        book.description = req.body.name;
-        book.title = req.body.name;
+        user.name = req.body.name;
+        user.contact = req.body.contact;
+
 
         book.save((err) => {
             if (err)
