@@ -13,11 +13,11 @@ const htmlController = require('./controllers/htmlController')
 
 
 mongoose.Promise = global.Promise; //ES6 Promise
-mongoose.connect('mongodb://localhost:27017/test').then(() => {
+//mongoose.connect('mongodb://localhost:27017/test').then(() => {
 
 //mongoose.connect(db)
 
-//mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}:${process.env.DB_PORT}/cats`).then(() => {
+mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}:${process.env.DB_PORT}/cats`).then(() => {
 
     console.log('Connected successfully.')
 /*const catSchema = new Schema({
