@@ -2,12 +2,232 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5716fe65-1977-4abf-9203-8c985dd034f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Models/books.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Models/users.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/img/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/img/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/api_data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/api_data.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/api_project.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/api_project.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/locale.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/pt_br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/locales/zh_cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/utils/handlebars_helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/utils/send_sample_request.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/diff_match_patch.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/handlebars.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/list.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/lodash.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/path-to-regexp/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/path-to-regexp/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/polyfill.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-Splus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-aea.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-agc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-apollo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-basic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-cbm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-cl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-clj.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-dart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-erl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-erlang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-fs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-go.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-hs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lasso.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lassoscript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-latex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lgt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lisp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-ll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-llvm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-logtalk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-ls.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lsp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-lua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-matlab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-ml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-mumps.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-n.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-nemerle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-pascal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-proto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-r.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-rd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-rkt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-rust.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-s.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-scala.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-scm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-sql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-ss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-swift.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-tcl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-tex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-vb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-vbs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-vhd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-vhdl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-wiki.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-xq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-xquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-yaml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/lang-yml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/prettify/run_prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/require.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/semver.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/vendor/webfontloader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/grunt-apidoc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/.jshintignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/CONTRIBUTORS.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/EXAMPLES.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/MARKDOWN.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/bin/apidoc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/example/_apidoc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/example/apidoc.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/example/example.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/example/footer.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/example/header.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/lib/package_info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/locales/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/locales/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/locales/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/locales/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/locales/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/locales/locale.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/locales/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/locales/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/locales/pt_br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/locales/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/locales/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/locales/zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/locales/zh_cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/utils/handlebars_helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/utils/send_sample_request.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/diff_match_patch.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/handlebars.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/list.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/lodash.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/path-to-regexp/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/path-to-regexp/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/polyfill.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-Splus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-aea.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-agc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-apollo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-basic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-cbm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-cl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-clj.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-dart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-erl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-erlang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-fs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-go.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-hs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-lasso.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-lassoscript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-latex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-lgt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-lisp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-ll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-llvm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-logtalk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-ls.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-lsp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-lua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-matlab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-ml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-mumps.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-n.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-nemerle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-pascal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-proto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-r.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-rd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-rkt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-rust.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-s.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-scala.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-scm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-sql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-ss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-swift.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-tcl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-tex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-vb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-vbs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-vhd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-vhdl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-wiki.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-xq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-xquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-yaml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/lang-yml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/prettify/run_prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/require.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/semver.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/apidoc/template/vendor/webfontloader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-apidoc/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-apidoc/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-apidoc/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-apidoc/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-apidoc/bin/grunt-apidoc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-apidoc/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-apidoc/tasks/apidoc.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/books.js" afterPath="$PROJECT_DIR$/Models/books.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/users.js" afterPath="$PROJECT_DIR$/Models/users.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/apiController.js" afterPath="$PROJECT_DIR$/controllers/apiController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,21 +245,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="265">
+              <caret line="55" column="3" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="73" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -48,8 +258,8 @@
       <file leaf-file-name="books.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models/books.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="195">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#0#53#0" expanded="false" />
               </folding>
@@ -60,8 +270,8 @@
       <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="150">
+              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
               <folding>
                 <element signature="e#0#53#0" expanded="false" />
               </folding>
@@ -69,11 +279,72 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apiController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="api_data.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/api_data.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1491551214000" expanded="true" signature="380:386" ph="&quot;" />
+                <marker date="1491551214000" expanded="true" signature="405:411" ph="&quot;" />
+                <marker date="1491551214000" expanded="true" signature="430:436" ph="&quot;" />
+                <marker date="1491551214000" expanded="true" signature="446:452" ph="&quot;" />
+                <marker date="1491551214000" expanded="true" signature="7528:7534" ph="&quot;" />
+                <marker date="1491551214000" expanded="true" signature="7551:7557" ph="&quot;" />
+                <marker date="1491551214000" expanded="true" signature="9292:9298" ph="&quot;" />
+                <marker date="1491551214000" expanded="true" signature="9315:9321" ph="&quot;" />
+                <marker date="1491551214000" expanded="true" signature="11142:11148" ph="&quot;" />
+                <marker date="1491551214000" expanded="true" signature="11165:11171" ph="&quot;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api_project.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/api_project.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api_project.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/api_project.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api_data.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/api_data.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apiController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/apiController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-298">
-              <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+            <state relative-caret-position="46">
+              <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
                 <element signature="e#0#53#0" expanded="false" />
               </folding>
@@ -89,46 +360,6 @@
               <folding>
                 <element signature="e#0#53#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/test.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1875">
-              <caret line="125" column="18" lean-forward="false" selection-start-line="123" selection-start-column="16" selection-end-line="125" selection-end-column="18" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -155,10 +386,10 @@
         <option value="$PROJECT_DIR$/controllers/htmlController.js" />
         <option value="$PROJECT_DIR$/public/style.css" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
-        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/controllers/apiController.js" />
         <option value="$PROJECT_DIR$/Models/users.js" />
         <option value="$PROJECT_DIR$/Models/books.js" />
-        <option value="$PROJECT_DIR$/controllers/apiController.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -172,7 +403,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="243" />
+    <option name="x" value="137" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="817" />
@@ -214,7 +445,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
+              <option name="myItemId" value="Models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -228,7 +459,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Models" />
+              <option name="myItemId" value="doc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -339,24 +570,24 @@
       <workItem from="1490814260907" duration="1697000" />
       <workItem from="1490855995194" duration="18218000" />
       <workItem from="1491290968933" duration="1012000" />
-      <workItem from="1491483169876" duration="7234000" />
+      <workItem from="1491483169876" duration="11492000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28161000" />
+    <option name="totallyTimeSpent" value="32419000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="243" y="23" width="1440" height="817" extended-state="0" />
-    <editor active="false" />
+    <frame x="137" y="23" width="1440" height="817" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19661734" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19661734" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761088" sideWeight="0.5024665" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32761088" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32761088" sideWeight="0.49753347" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -376,8 +607,8 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827586" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0970753" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32761088" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19661734" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -604,14 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/htmlController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -622,33 +845,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/users.js">
+    <entry file="file://$PROJECT_DIR$/Models/books.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="195">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#0#53#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/books.js">
+    <entry file="file://$PROJECT_DIR$/doc/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding>
             <element signature="e#0#53#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/api_project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/api_project.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/api_data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/api_data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1491551214000" expanded="true" signature="380:386" ph="&quot;" />
+            <marker date="1491551214000" expanded="true" signature="405:411" ph="&quot;" />
+            <marker date="1491551214000" expanded="true" signature="430:436" ph="&quot;" />
+            <marker date="1491551214000" expanded="true" signature="446:452" ph="&quot;" />
+            <marker date="1491551214000" expanded="true" signature="7528:7534" ph="&quot;" />
+            <marker date="1491551214000" expanded="true" signature="7551:7557" ph="&quot;" />
+            <marker date="1491551214000" expanded="true" signature="9292:9298" ph="&quot;" />
+            <marker date="1491551214000" expanded="true" signature="9315:9321" ph="&quot;" />
+            <marker date="1491551214000" expanded="true" signature="11142:11148" ph="&quot;" />
+            <marker date="1491551214000" expanded="true" signature="11165:11171" ph="&quot;" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/apiController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-298">
-          <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+        <state relative-caret-position="46">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="e#0#53#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="55" column="3" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="73" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>

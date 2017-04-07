@@ -2,6 +2,7 @@
  * Created by tehetenamasresha on 06/04/2017.
  */
 const mongoose = require('mongoose');
+const Users = require ('../Models/users')
 
 const Schema = mongoose.Schema;
 
@@ -10,7 +11,7 @@ const bookSchema = new Schema({
     author: String,
     description: Boolean,
     isFree: Boolean,
-    Owner: String
+    Owner: Users
 });
 
 

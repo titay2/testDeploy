@@ -2,15 +2,16 @@
  * Created by tehetenamasresha on 06/04/2017.
  */
 const mongoose = require('mongoose');
+const Books = require ('../Models/books')
+
 
 const Schema = mongoose.Schema;
 
 const usersSchema = new Schema({
     name: String,
-    Author: String,
-    description: Boolean,
-    isFree: Boolean,
-    Owner: String
+    contact: String,
+    books: Books,
+
 });
 
 const Users = mongoose.model('users', usersSchema);
