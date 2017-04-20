@@ -2,12 +2,34 @@
  * Created by tehetenamasresha on 06/04/2017.
  */
 const mongoose = require('mongoose');
-const express = require('express')
+const bcrypt = require('bcrypt-nodejs');
 
-const Books = require ('../Models/books')
+const userSchema = mongoose.Schema({
+    fullname :{type: String, required: true},
+    email: {type: String , required: true},
+    password: {type: String},
+    role:{ type: String, default: ''},
+    book :{
+        title:{type: String,  default:''},
+        auther:{type: String,  default:''},
+        gener:{type: String,  default:''},
+        image: {type: String, default:''}
+    },
 
+    passwordResetToken: {type: String, default: ''},
+    passwordResetExpires: {type: Date, default: Date.now},
 
-const Schema = mongoose.Schema;
+});
+
+userSchema.methods.encryptPassword = (password) => {
+    return bcrypt.hashSync(password, bcrypt.genSaltSync(10), null);
+}
+
+userSchema.methods.validPassword = function(password) {
+    return bcrypt.compareSync(password, this.password);
+};
+
+/*const Schema = mongoose.Schema;
 
 const usersSchema = new Schema({
     name: String,
@@ -15,5 +37,5 @@ const usersSchema = new Schema({
 
 });
 
-const Users = mongoose.model('users', usersSchema);
-module.exports= Users;
+const Users = mongoose.model('users', usersSchema)*/
+module.exports= mongoose.model('User', userSchema);

@@ -3,8 +3,15 @@
  */
 const express = require('express')
 const app = express()
+const cookieParser  = require('cookie-parser')
+const bodyParser  = require('body-parser')
+const validator  = require('express-validator')
+const session = require('express-session')
+const MongoStore = require('connect-mongo')(session)
 const mongoose = require('mongoose')
 const moment = require('moment')
+const passport = require('passport')
+const flash = require('connect-flash')
 const apiController = require('./controllers/apiController')
 const htmlController = require('./controllers/htmlController')
 
@@ -13,55 +20,33 @@ const htmlController = require('./controllers/htmlController')
 
 
 mongoose.Promise = global.Promise; //ES6 Promise
-//mongoose.connect('mongodb://localhost:27017/test').then(() => {
+mongoose.connect('mongodb://localhost:27017/test').then(() => {
 
 //mongoose.connect(db)
 
-mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}:${process.env.DB_PORT}/cats`).then(() => {
+//mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}:${process.env.DB_PORT}/cats`).then(() => {
 
     console.log('Connected successfully.')
-/*const catSchema = new Schema({
-    name:  String,
-    age:   Number,
-    gender: { type: String, enum:[ 'male', 'female']  },
-    color: String,
-    weight: Number
 
-    });*/
+    app.use (cookieParser())
 
-/*
-    const cats = mongoose.model('cat1', catSchema);
-*/
+    app.use(bodyParser.json())
+    app.use(bodyParser.urlencoded({extended: true}));
 
-    /*const cat1 = new cats({
-        name: 'Angela',
-        age: 20,
-        gender: 'male',
-        color: 'blue',
-        weight: 40
-    });*/
-    /*cat1.save().then( savedCat => console.log(savedCat)).catch(err => console.log(err));
-
-    cats.find().
-    where('age').gt(17).lt(50).
-    exec(callback);
+    app.use (validator())
 
 
-
-
-     cats.find({}, (err, cat)=> {
-         if (err) throw err;
-
-         console.log('the cats found '+ cat)
-         app.get('/form',(req,res)=>{
-             //res.send("connected!")
-             res.render('test', { ID: cat})
-
-         })
-
-     })
-
-     */
+    require('./config/passport')
+    app.use (session({
+        secret: 'thisisasecret',
+        resave: false,
+        saveUninitialized: false,
+        store : new MongoStore({mongooseConnection: mongoose.connection})
+    }))
+    app.use(flash())
+    app.use (passport.initialize())
+    app.use (passport.session())
+ require('./routes/user')(app)
     const port = process.env.PORT || 3030;
 
     app.listen(port)
