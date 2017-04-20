@@ -2,10 +2,7 @@
  * Created by tehetenamasresha on 30/03/2017.
  */
 const express = require('express')
-const Books = require ('../Models/books')
-const Users = require ('../Models/users')
 const bodyParser = require('body-parser')
-
 
 module.exports = (app)=> {
 
@@ -93,33 +90,4 @@ module.exports = (app)=> {
     })
 }
 
-/*
-app.get('/api/setup', (req, res) => {
 
-    /!*const starterBook = [
-     {
-     title: 'pillars',
-     author: 'ken follet',
-     description: 'good one',
-     isFree: true
-     },
-     {
-     title: 'of',
-     author: 'ken follet',
-     description: 'good one',
-     isFree: true
-     },
-     {
-     title: 'the earth',
-     author: 'ken follet',
-     description: 'good one',
-     isFree: true
-     }
-
-     ]*!/
-
-    Books.create(starterBook, (err, result)=>
-        res.send(result)
-    )
-})
-*/

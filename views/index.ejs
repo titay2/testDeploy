@@ -1,61 +1,46 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
-<head>
+<!--<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">-->
+<!--<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cats</title>
+    <title>Brana</title>
 
-        <link href="assets/style.css" type="text/css" rel="stylesheet"/>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-
+</head>-->
+<!--
 <body >
+-->
+<% layout('layout') %>
 
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+<!--<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
 
-    <a class="navbar-brand" href="#">Brana</a>
+    <a class="navbar-brand" href="#">ብራና</a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Books <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Recent<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Genre <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Author <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Free</a>
-            </li>
 
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <button class="btn btn-outline-success my-2 my-lg-0" type="submit">Upload</button>
-        </form>
+        <a class="form-inline my-2 my-lg-0" href="/signin">
+            <button class="btn btn-outline-success my-2 my-lg-0" type="submit">Sign In</button>
+        </a>
+        <a class="form-inline my-2 my-lg-0" href="/signup">
+            <button class="btn btn-outline-success my-2 my-lg-0" type="submit">Sign Up</button>
+        </a>
     </div>
-</nav>
+</nav>-->
 
 
-
+<% include partials/nav%>
 
 
 <div class="container contentContainer" id="topContainer">
@@ -64,7 +49,7 @@
 
         <div class="col-md-6 col-md-offset-3" id="topRow">
 
-            <h1 class="marginTop">Brana ብራና</h1>
+            <h1 class="marginTop">Brana </h1>
 
             <p class="qoute">No two persons ever read the same book.</p>
 
@@ -86,61 +71,12 @@
 </div>
 
 
-<div class="container contentContainer" id="details">
 
-
-    <div class="row marginBottom">
-
-        <div class="col-md-4 marginTop">
-            <h2><span class="glyphicon glyphicon-music"></span> Books</h2>
-            <p>Users will see all the books that has been uploaded with out logging in.
-                but they can upload or get detail information with out logging in</p>
-            <button class="btn btn-success marginTop">Login!</button>
-
-        </div>
-
-        <div class="col-md-4 marginTop">
-            <h2><span class="glyphicon glyphicon-off"></span> Filter</h2>
-            <p>once users logged in they will have access to other users detail.they can also see contact them through
-                any means available by them.They can also upload and share their books.
-                Books can be filtered with all ways possible</p>
-            <button class="btn btn-success marginTop"> Filter!</button>
-
-        </div>
-
-        <div class="col-md-4 marginTop">
-            <h2><span class="glyphicon glyphicon-pencil"></span> free</h2>
-            <p>Users can give away books for free.Or exchange it for a new one.
-                They can also claim their books back.
-                For every user who has returned books in bad condition there will
-                be signes given to them by the loner of the book.
-            </p>
-            <button class="btn btn-success marginTop">Bad user!</button>
-
-        </div>
-        <div class="col-md-4 marginTop">
-            <h2><span class="glyphicon glyphicon-pencil"></span> npm packages</h2>
-            <ul >
-            <li>env</li>
-            <li>mongoose</li>
-            <li>express</li>
-            <li>body-parser</li>
-            <li>ejs</li>
-
-
-            </ul>
-
-
-        </div>
-
-    </div>
-</div>
-
-
+<!--
 <script>
 
     $(".contentContainer").css("min-height",$(window).height());
 
-</script>
-</body>
-</html>
+</script>-->
+<!--</body>
+</html>-->
