@@ -2,6 +2,9 @@
  * Created by tehetenamasresha on 19/04/2017.
  */
 const passport = require('passport')
+const express = require('express');
+
+const app = express();
 
 module.exports = (app) => {
     app.get('/', (req, res, next) => {
@@ -47,7 +50,12 @@ module.exports = (app) => {
     })
 }
 
-
+app.get('/logout', (req, res) => {
+    req.logout();
+    req.session.destroy((err) => {
+        res.redirect('/');
+    });
+})
 function validate(req, res, next){
    req.checkBody('email', 'Email is Required').notEmpty();
    req.checkBody('email', 'Email is Invalid').isEmail();

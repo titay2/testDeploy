@@ -37,6 +37,7 @@ mongoose.connect('mongodb://localhost:27017/test').then(() => {
 
 
     require('./config/passport')
+    require('./routes/book')(app)
     app.use (session({
         secret: 'thisisasecret',
         resave: false,

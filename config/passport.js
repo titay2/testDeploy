@@ -1,6 +1,5 @@
 const passport = require('passport');
 const User = require('../Models/users')
-const bodyParser  = require('body-parser')
 const LocalStrategy = require('passport-local').Strategy;
 const FacebookStrategy = require('passport-facebook').Strategy;
 const secret = require('../secret/secret');
@@ -31,7 +30,7 @@ passport.use('local.signup', new LocalStrategy({
             return done(null, false, req.flash('error', 'User With Email Already Exist.'));
         }
 
-        var newUser = new User();
+        const newUser = new User();
         newUser.fullname = req.body.fullname;
         newUser.email = req.body.email;
         newUser.password = newUser.encryptPassword(req.body.password);
@@ -73,11 +72,11 @@ passport.use(new FacebookStrategy(secret.facebook, (req, token, refreshToken, pr
         if(user){
             done(null, user);
         }else{
-            const newUser = new User();
+            const  newUser = new User();
             newUser.facebook = profile.id;
             newUser.fullname = profile.displayName;
             newUser.email = profile._json.email;
-            newUser.tokens.push({token:token});
+           // newUser.tokens.push({token:token});
 
             newUser.save(function(err) {
                 if(err){
