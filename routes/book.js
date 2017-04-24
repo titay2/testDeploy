@@ -10,7 +10,7 @@ const Book = require('../Models/books');
 module.exports = (app)=>{
     app.get('/book/create', (req, res) => {
         const success = req.flash('success');
-        res.render('book/books', {title: 'Book Registration', success:success, noErrors: success.length > 0});
+        res.render('book/book', {title: 'Book Registration', user: req.user, success:success, noErrors: success.length > 0});
     });
 
     app.post('/book/create', (req, res) => {
@@ -30,7 +30,7 @@ module.exports = (app)=>{
             console.log(newBook);
 
             req.flash('success', 'Book data has been added.');
-            res.redirect('/book/create');
+            res.redirect('book/book');
         })
     });
 
