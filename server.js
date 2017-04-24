@@ -37,7 +37,6 @@ mongoose.connect('mongodb://localhost:27017/test').then(() => {
 
 
     require('./config/passport')
-    require('./routes/book')(app)
     app.use (session({
         secret: 'thisisasecret',
         resave: false,
@@ -48,6 +47,7 @@ mongoose.connect('mongodb://localhost:27017/test').then(() => {
     app.use (passport.initialize())
     app.use (passport.session())
  require('./routes/user')(app)
+ require('./routes/book')(app)
     const port = process.env.PORT || 3030;
 
     app.listen(port)

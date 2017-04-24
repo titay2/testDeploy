@@ -1,20 +1,20 @@
-/**
- * Created by tehetenamasresha on 06/04/2017.
- */
 const mongoose = require('mongoose');
-const Users = require ('../Models/users')
 
-const Schema = mongoose.Schema;
+const bookSchema = mongoose.Schema({
+    name: {type: String},
+    author: {type: String},
+    genre: {type: String},
+    description: {type: String},
+    image: {type: String, default: 'defaultPic.png'},
 
-const bookSchema = new Schema({
-    title: String,
-    author: String,
-    description: String,
-    isFree: Boolean,
+    bookRating: [{
+        userFullname: {type: String, default: ''},
+        userRating: {type: Number, default: 0},
+        userReview: {type: String, default: ''}
+    }],
+
+    ratingNumber: [Number],
+    ratingSum: {type: Number, default: 0}
 });
 
-
-
-const Books = mongoose.model('Books', bookSchema);
-
-module.exports = Books;
+module.exports = mongoose.model('Book', bookSchema);
