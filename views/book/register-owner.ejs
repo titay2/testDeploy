@@ -1,0 +1,38 @@
+<% layout('layout2') %>
+
+
+<div id="wrapper">
+
+    <% include ../partials/sidebar %>
+
+    <div id="page-content-wrapper">
+        <% include ../partials/navbar %>
+        <div class="container-fluid main_body">
+            <div class="ul_links">
+                <ul>
+                    <li><a href="/">Home</a></li> |
+                    <li><a href="/books">Book</a></li> |
+                    <li><a href="#">Register as an Owner</a></li>
+                </ul>
+            </div>
+
+            <div class="bodyDiv">
+                <h4 style="">Register Owner name</h4>
+
+                <div class="form-group">
+                    <label for="">Book</label><br>
+                    <label><%= data.name %></label>
+                </div>
+
+                <form action="" method="post">
+
+                    <div class="form-group">
+                        <input type="submit" id="role" value="Register" class="form-control btn btn-primary" name="userRole" style="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+

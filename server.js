@@ -14,6 +14,7 @@ const passport = require('passport')
 const flash = require('connect-flash')
 const apiController = require('./controllers/apiController')
 const htmlController = require('./controllers/htmlController')
+const _ = require('underscore')
 
  require('dotenv').config()
 
@@ -46,8 +47,12 @@ mongoose.connect('mongodb://localhost:27017/test').then(() => {
     app.use(flash())
     app.use (passport.initialize())
     app.use (passport.session())
+
+    app.locals._ = _;
+
  require('./routes/user')(app)
  require('./routes/book')(app)
+ require('./routes/review')(app)
     const port = process.env.PORT || 3030;
 
     app.listen(port)

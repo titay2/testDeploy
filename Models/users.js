@@ -8,12 +8,10 @@ const userSchema = mongoose.Schema({
     fullname :{type: String, required: true},
     email: {type: String , required: true},
     password: {type: String},
-    role:{ type: String, default: ''},
     book :{
-        title:{type: String,  default:''},
-        auther:{type: String,  default:''},
-        gener:{type: String,  default:''},
-        image: {type: String, default:''}
+        name:{type: String,  default:''},
+        image:{type: String,  default:''}
+
     },
 
     passwordResetToken: {type: String, default: ''},

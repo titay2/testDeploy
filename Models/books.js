@@ -6,7 +6,8 @@ const bookSchema = mongoose.Schema({
     genre: {type: String},
     description: {type: String},
     image: {type: String, default: 'defaultPic.png'},
-
+    ownerId: {type: String, default: ''},
+    ownerName: {type: String, default: ''},
     bookRating: [{
         userFullname: {type: String, default: ''},
         userRating: {type: Number, default: 0},

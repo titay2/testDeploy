@@ -1,38 +1,43 @@
 const formidable = require('formidable')
 const path = require('path')
 const fs = require('fs')
+const async = require('async');
 
-
+const {arrayAverage} = require('../myFunctions');
 
 
 const Book = require('../Models/books');
+const User = require('../Models/users');
 
 module.exports = (app)=>{
-    app.get('/book/create', (req, res) => {
+    app.get('/book/create/', (req, res) => {
         const success = req.flash('success');
+
         res.render('book/book', {title: 'Book Registration', user: req.user, success:success, noErrors: success.length > 0});
     });
 
-    app.post('/book/create', (req, res) => {
-
+    app.post('/book/create/', (req, res) => {
         const newBook = new Book();
         newBook.name = req.body.title;
         newBook.author = req.body.author;
         newBook.genre = req.body.genre;
         newBook.description = req.body.description;
         newBook.image = req.body.upload;
+        newBook.ownerId = req.user.id;
+        newBook.ownerName = req.user.fullname;
 
         newBook.save((err) => {
             if(err){
                 console.log(err);
             }
+              console.log(newBook);
 
-            console.log(newBook);
-
-            req.flash('success', 'Book data has been added.');
-            res.redirect('book/book');
+            req.flash('success', 'Book has been added.');
+             res.redirect('/book/create/' )
         })
-    });
+
+
+     })
 
     app.post('/upload', (req, res) => {
         const form = new formidable.IncomingForm();
@@ -60,4 +65,25 @@ module.exports = (app)=>{
         form.parse(req);
 
     });
-}
+
+    app.get('/books', (req, res) => {
+        Book.find({}, (err, result) => {
+            console.log(result)
+            res.render('book/books', {title: 'All Books ', user: req.user, data: result});
+        });
+    })
+
+    app.get('/book-profile/:id', (req, res) => {
+        Book.findOne({'_id':req.params.id}, (err, data) => {
+            const avg = arrayAverage(data.ratingNumber);
+            res.render('book/book-profile', {title: 'Book Name', user:req.user, id: req.params.id, data:data, average: avg});
+            });
+        });
+
+    app.get('/book/leaderboard', (req, res) => {
+        Book.find({}, (err, result) => {
+            res.render('book/leaderboard', {title: ' Leadebaord ', user: req.user, data: result});
+        }).sort({'ratingSum': -1});
+    });
+
+    ;}
