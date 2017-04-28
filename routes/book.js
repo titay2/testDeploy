@@ -86,4 +86,8 @@ module.exports = (app)=>{
         }).sort({'ratingSum': -1});
     });
 
+    app.get('/book/search', (req, res) => {
+            res.render('book/search', {title: 'All Books ', user: req.user, data: result});
+    })
+
     ;}

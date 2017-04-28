@@ -2,7 +2,8 @@
  * Created by tehetenamasresha on 28/03/2017.
  */
 const express = require('express')
-const app = express()
+const https = require('https');
+const fs = require('fs');
 const cookieParser  = require('cookie-parser')
 const bodyParser  = require('body-parser')
 const validator  = require('express-validator')
@@ -16,9 +17,17 @@ const apiController = require('./controllers/apiController')
 const htmlController = require('./controllers/htmlController')
 const _ = require('underscore')
 
- require('dotenv').config()
+const sslkey = fs.readFileSync('ssl-key.pem');
+const sslcert = fs.readFileSync('ssl-cert.pem')
 
+const options = {
+    key: sslkey,
+    cert: sslcert
+};
 
+const app = express()
+
+require('dotenv').config()
 
 mongoose.Promise = global.Promise; //ES6 Promise
 mongoose.connect('mongodb://localhost:27017/test').then(() => {
@@ -28,6 +37,8 @@ mongoose.connect('mongodb://localhost:27017/test').then(() => {
 //mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}:${process.env.DB_PORT}/cats`).then(() => {
 
     console.log('Connected successfully.')
+
+
 
     app.use (cookieParser())
 
@@ -53,9 +64,11 @@ mongoose.connect('mongodb://localhost:27017/test').then(() => {
  require('./routes/user')(app)
  require('./routes/book')(app)
  require('./routes/review')(app)
-    const port = process.env.PORT || 3030;
 
-    app.listen(port)
+    const port = process.env.PORT || 3030;
+    https.createServer(options, app).listen(port);
+
+    //app.listen(port)
     apiController(app)
     htmlController(app)
 
