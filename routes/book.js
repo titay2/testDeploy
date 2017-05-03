@@ -68,8 +68,9 @@ module.exports = (app)=>{
 
     app.get('/books', (req, res) => {
         Book.find({}, (err, result) => {
-            console.log(result)
             res.render('book/books', {title: 'All Books ', user: req.user, data: result});
+            console.log(req.user)
+            console.log(result)
         });
     })
 
@@ -87,7 +88,32 @@ module.exports = (app)=>{
     });
 
     app.get('/book/search', (req, res) => {
-            res.render('book/search', {title: 'All Books ', user: req.user, data: result});
+            res.render('book/search', {title: 'All Books ', user: req.user});
     })
+    app.post('/book/search', (req, res) => {
+        const name = req.body.search;
+        const regex = new RegExp(name, 'i');
 
-    ;}
+        Book.find({'$or': [{'name':regex}]}, (err, data) => {
+            if(err){
+                console.log(err);
+            }else{
+                res.redirect('/book-profile/'+data[0]._id);
+
+            }
+        });
+    });
+
+    /*app.get('/mybooks/:id', (req, res) => {
+        Book.find({'ownerId': req.params.ownerId}, (err, result) => {
+            console.log(result)
+            res.render('book/mybooks', {title: 'My Books ', user: req.user, data: result});
+        });
+    })*/
+
+    app.get('/:name/owner', (req, res) => {
+        Book.findOne({'name':req.params.name}, (err, data) => {
+            res.render('book/owner', {title: 'Owner', user: req.user, data: data});
+        });
+    });
+    }

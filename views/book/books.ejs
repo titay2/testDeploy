@@ -17,7 +17,14 @@
             </div>
 
             <div class="bodyDiv">
-                <h4 style="">Books</h4>
+              <div class="ul_links">
+<hr>
+                <ul>
+                    <li><a href="/books"><h4>All Books</h4></a></li> |
+                    <li><a href="/mybooks/<% user._id %>"><h4>My books</h4></a></li>
+                </ul>
+              </div>
+
                 <% arrayAverage = function(arr) {
                     return _.reduce(arr, (num1, num2) => {
                                 return num1 + num2;

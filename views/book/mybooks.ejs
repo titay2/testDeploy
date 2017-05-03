@@ -1,0 +1,63 @@
+<% layout('layout2') %>
+
+
+
+<div id="wrapper">
+
+    <% include ../partials/sidebar %>
+
+    <div id="page-content-wrapper">
+        <% include ../partials/navbar %>
+        <div class="container-fluid main_body">
+            <div class="ul_links">
+                <ul>
+                    <li><a href="/">Home</a></li> |
+                    <li><a href="/books">All Books</a></li>
+                </ul>
+            </div>
+
+            <div class="bodyDiv">
+                <div class="ul_links">
+                    <hr>
+                    <ul>
+                        <li><a href="/books"><h4>All Books</h4></a></li> |
+                        <li><a href="/"><h4>My books</h4></a></li>
+                    </ul>
+                </div>
+
+                <% arrayAverage = function(arr) {
+                    return _.reduce(arr, (num1, num2) => {
+                                return num1 + num2;
+                            }, 0) / (arr.length === 0 ? 1 : arr.length);
+                } %>
+
+
+                <% for(var i = 0; i < data.length; i++) {%>
+                <% var total = arrayAverage(data[i].ratingNumber) %>
+
+
+                <div class="col-xs-12 col-md-6 col-lg-4 bookListDiv">
+                    <a href="/book-profile/<%= data[i]._id %>">
+                        <img src="/uploads/<%= data[i].image %>" class="bookListItemLogo">
+
+                        <div class="bookListItemInfo">
+                            <h5 class=""><%= data[i].name %></h5>
+                            <span class="">
+                               <i class="star" data-score="<%= total %>"></i>
+                                    (<%= data[i].ratingNumber.length %>)
+                            </span><br>
+                            <i class="glyphicon glyphicon-user "> <%= data[i].author %></i><br>
+                            <i class="glyphicon glyphicon-tasks"> <%= data[i].genre %></i>
+                        </div>
+
+                    </a>
+                </div>
+                <% } %>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+

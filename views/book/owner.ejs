@@ -1,0 +1,48 @@
+<% layout('layout2') %>
+
+<div id="wrapper">
+
+    <% include ../partials/sidebar %>
+
+    <div id="page-content-wrapper">
+        <% include ../partials/navbar %>
+        <div class="container-fluid main_body">
+            <div class="ul_links">
+                <ul>
+                    <li><a href="/">Home</a></li> |
+                    <li><a href="/books">Books</a></li> |
+                    <li><a href="#">Owner</a></li>
+                </ul>
+            </div>
+
+            <div class="bodyDiv">
+                <h4 style="">Book Owner</h4>
+
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Fullname</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+
+                    <tr>
+                        <td><%= data.ownerName %></td>
+                        <td><a href="/message/<%= data.ownerId %>" class="btn btn-primary">Send Message</a></td>
+                    </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+

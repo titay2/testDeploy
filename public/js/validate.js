@@ -2,7 +2,8 @@
  * Created by tehetenamasresha on 24/04/2017.
  */
 $(document).ready(function(){
-    $('#register').on('click', ()=>{
+    $('#register').on('submit', (e)=>{
+        e.preventDefault()
         const title = $.trim($('#title').val());
         const author = $.trim($('#author').val());
         const genre = $.trim($('#genre').val());

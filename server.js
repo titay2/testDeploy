@@ -60,10 +60,12 @@ mongoose.connect('mongodb://localhost:27017/test').then(() => {
     app.use (passport.session())
 
     app.locals._ = _;
+    app.locals.moment = moment;
 
  require('./routes/user')(app)
  require('./routes/book')(app)
  require('./routes/review')(app)
+ require('./routes/message')(app)
 
     const port = process.env.PORT || 3030;
     https.createServer(options, app).listen(port);
