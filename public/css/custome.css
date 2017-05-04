@@ -1,9 +1,6 @@
-
-.reg_msg h1 {
-    font-size:500%;
+.branaLink{
+    font-size:250%;
     font-family:Snell Roundhand, cursive;
-    color: #4cae4c;
-
 }
 .signup{
     text-align: center;
@@ -360,7 +357,7 @@ input[type="submit"]{
 
 .nav_bar > li > a{
     color: #73879C;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 

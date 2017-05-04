@@ -3,7 +3,7 @@
 <div class="container">
     <br><br>
     <div class="text-center reg_msg">
-        <h1><a href="/">Brana</a></h1>
+        <h1><a href="/" class="branaLink" >Brana</a></h1>
     </div>
     <br><br>
 
@@ -15,6 +15,7 @@
 
 
     <div class="text-center reg_msg">
+
         <h2 class="fancy"><span>Login</span></h2>
     </div><br>
 
@@ -31,7 +32,12 @@
         </div>
         <% } %>
         <% } %>
-
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
         <form method="POST" action="/signin">
 
             <div class="form-group input_group">
@@ -48,18 +54,12 @@
             </div>
 
             <div class="form-group">
-                <label for="">
-                    <input type="checkbox" name="rememberme" class="" value="yes">
-                </label>&nbsp;&nbsp;Remember Me
+                <div>
+                    <h5 class="pull-left">Don't have an account? <a href="/signup">Sign Up</a></h5>
+                </div>
             </div>
 
         </form>
-
-        <div>
-            <h4 class="pull-left">Don't have an account? <a href="/signup">Sign Up</a></h4>
-            <h4 class="pull-right"><a href="/forgot">Forgot Your Password?</a></h4>
-        </div>
-
 
     </div>
 </div>

@@ -45,17 +45,21 @@ module.exports = (app) => {
         failureRedirect: '/login',
         failureFlash: true
     }))
-    app.get('/home', (req, res) => {
+    app.get('/home', isLoggedIn, (req, res) => {
           res.render('home', {title: 'Home || RateMe', user: req.user});
+    })
+
+    app.get('/logout', (req, res) => {
+
+        req.logout();
+        console.log('loggedout')
+        req.session.destroy((err) => {
+            res.redirect('/');
+        });
     })
 }
 
-app.get('/logout', (req, res) => {
-    req.logout();
-    req.session.destroy((err) => {
-        res.redirect('/');
-    });
-})
+
 function validate(req, res, next){
    req.checkBody('email', 'Email is Required').notEmpty();
    req.checkBody('email', 'Email is Invalid').isEmail();
@@ -98,3 +102,11 @@ function validate(req, res, next){
        return next();
    }
 }
+
+function isLoggedIn(req, res, next){
+    if(req.isAuthenticated()){
+        next()
+    }else{
+        res.redirect('/')
+    }
+};

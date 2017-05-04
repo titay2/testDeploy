@@ -10,7 +10,7 @@ const Book = require('../Models/books');
 const User = require('../Models/users');
 
 module.exports = (app)=>{
-    app.get('/book/create/', (req, res) => {
+    app.get('/book/create/',isLoggedIn, (req, res) => {
         const success = req.flash('success');
 
         res.render('book/book', {title: 'Book Registration', user: req.user, success:success, noErrors: success.length > 0});
@@ -66,7 +66,7 @@ module.exports = (app)=>{
 
     });
 
-    app.get('/books', (req, res) => {
+    app.get('/books',isLoggedIn, (req, res) => {
         Book.find({}, (err, result) => {
             res.render('book/books', {title: 'All Books ', user: req.user, data: result});
             console.log(req.user)
@@ -74,20 +74,20 @@ module.exports = (app)=>{
         });
     })
 
-    app.get('/book-profile/:id', (req, res) => {
+    app.get('/book-profile/:id',isLoggedIn, (req, res) => {
         Book.findOne({'_id':req.params.id}, (err, data) => {
             const avg = arrayAverage(data.ratingNumber);
             res.render('book/book-profile', {title: 'Book Name', user:req.user, id: req.params.id, data:data, average: avg});
             });
         });
 
-    app.get('/book/leaderboard', (req, res) => {
+    app.get('/book/leaderboard',isLoggedIn, (req, res) => {
         Book.find({}, (err, result) => {
             res.render('book/leaderboard', {title: ' Leadebaord ', user: req.user, data: result});
         }).sort({'ratingSum': -1});
     });
 
-    app.get('/book/search', (req, res) => {
+    app.get('/book/search', isLoggedIn,(req, res) => {
             res.render('book/search', {title: 'All Books ', user: req.user});
     })
     app.post('/book/search', (req, res) => {
@@ -111,9 +111,16 @@ module.exports = (app)=>{
         });
     })*/
 
-    app.get('/:name/owner', (req, res) => {
+    app.get('/:name/owner',isLoggedIn, (req, res) => {
         Book.findOne({'name':req.params.name}, (err, data) => {
             res.render('book/owner', {title: 'Owner', user: req.user, data: data});
         });
     });
     }
+function isLoggedIn(req, res, next){
+    if(req.isAuthenticated()){
+        next()
+    }else{
+        res.redirect('/')
+    }
+};
