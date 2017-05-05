@@ -17,7 +17,7 @@ module.exports = (app) => {
             },
 
             function(callback){
-                Message.find({ $or: [{'userFrom':req.user._id, 'userTo':req.params.id}, {'userFrom': req.params.id, 'userTo':req.user._id}]}, (err, result2) => {
+                Message.find({ $or: [{'userFrom':req.user._id, 'userTo':req.params.id }, {'userFrom': req.params.id, 'userTo':req.user._id}]}, (err, result2) => {
                     callback(err, result2);
 
                 });
